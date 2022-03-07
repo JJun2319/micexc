@@ -1,1 +1,18 @@
-
+{
+  "name": "Creating my first extension",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "content_scripts": {
+    "js": ["scripts/content.js"]
+  },
+  "permissions": ["storage"],  
+  "browser_action": {    
+    "default_icon": "favicon.png",    
+    "default_popup": "./src/extension/popup.html"  
+  }    
+  "manifest_version": 2
+}

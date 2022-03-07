@@ -1,7 +1,7 @@
 {
-  "name": "Creating my first extension",
+  "name": "MicExc",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "https://github.com/JJun2319/micexc",
   "background": {
     "scripts": ["scripts/background.js"],
     "persistent": false

@@ -1,18 +1,32 @@
 {
+  "manifest_version": 2,
+
   "name": "MicExc",
-  "version": "1.0",
   "description": "https://github.com/JJun2319/micexc",
-  "background": {
-    "scripts": ["scripts/background.js"],
-    "persistent": false
-  },
-  "content_scripts": {
-    "js": ["scripts/content.js"]
-  },
-  "permissions": ["storage"],  
-  "browser_action": {    
-    "default_icon": "favicon.png",    
+  "version": "1.0.0",
+  
+  "browser_action": 
+  {    
+    "default_icon": 
+    {
+      "16": "/icons/MicExc_icon16px.png",
+      "32": "/icons/MicExc_icon32px.png",
+      "48": "/icons/MicExc_icon48px.png",
+      "128": "/icons/MicExc_icon128px.png"
+    },  
     "default_popup": "popup.html"  
-  }    
-  "manifest_version": 2
+  },
+  "icons": {
+    "16": "/icons/MicExc_icon16px.png",
+    "32": "/icons/MicExc_icon32px.png",
+    "48": "/icons/MicExc_icon48px.png",
+    "128": "/icons/MicExc_icon128px.png"
+  },
+  "permissions": ["storage"],
+  "options_page": "options.html",
+  "background": 
+  {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
